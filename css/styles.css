@@ -1,0 +1,98 @@
+.foto {
+    width: 200px;
+} 
+
+:root {
+    --color-pink: hsl(300, 100%, 70%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0,0%, 12%);
+    --color-grey-900: hsl(0,0%, 8%);
+    --spacing-10: 10px;
+    --spacing-20: 20px;
+}
+
+/* margem da página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+/* cores de fundo e do link */
+body {
+    background-color: var(--color-grey-900);
+    font-family: "Inter", sans-serif;
+}
+
+/* como enumerar a lista */
+ul{
+    list-style: none;
+}
+/* centralização de tudo  */
+.container{
+    background-color: var(--color-grey-800);
+    color: var(--color-white);
+    width: 400px;
+    text-align: center; 
+    padding: var(--spacing-10) var(--spacing-20);
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* arredondamento da imagem e cor em volta e animação */
+.container img {
+    border-radius: 60%;
+    border: 2px solid var(--color-pink);
+    transition: .5s;
+}
+
+/* animação na imagem apassar o mause */
+.container img:hover {
+    border-color: var(--color-pink);
+    scale: 1.1;
+    cursor: pointer; 
+}
+
+.container h1 {
+    /* tamanho da letra */
+    font-size: 35px;
+    /* espesurra da letra */
+    font-weight: 200;
+    /* espassamento do titulo para o subtitulo */
+    margin-block: var(--spacing-10) ;
+}
+
+.container h2 {
+    color: var(--color-pink);
+    font-size: 20px;
+    font-weight: 200;
+    /* espaço de sp e do front */
+    margin-bottom:var(--spacing-10) ;
+}
+
+.container p {
+    font-size: 15px;
+    font-weight: 100;
+    margin-block: var(--spacing-10);
+}
+
+.social a {
+    border-radius: 8px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    padding-block: var(--spacing-10);
+    transition: .5s;
+}
+
+.social a:hover {
+    background-color: var(--color-pink);
+    color: var(--color-grey-900);
+}
+
+
+
+
